@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alejandro Romero</title>
+<meta name="description" content="Ingeniero de software. Tiendas en línea, ropa AR Girl SV y viajes AR Trip SV. WhatsApp 7867-9866.">
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:title" content="Alejandro Romero · Ingeniero de Software">
+<meta property="og:description" content="Tiendas en línea, páginas web, ropa y viajes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0b; --card:#151517; --card-hi:#1d1d20; --text:#f5f5f6; --muted:#8b8b93;
+    --wa:#25d366;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);color:var(--text);min-height:100dvh;
+    font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;
+    padding:calc(28px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom));
+  }
+  main{max-width:420px;margin:0 auto}
+  a{color:inherit;text-decoration:none}
+  :focus-visible{outline:2px solid var(--text);outline-offset:3px;border-radius:14px}
+
+  /* header */
+  .me{display:flex;align-items:center;gap:14px}
+  .pic{position:relative;flex:none;width:64px;height:64px;border-radius:50%;background:#26262a;display:grid;place-items:center;
+       font-weight:800;font-size:22px;letter-spacing:-.02em;overflow:hidden}
+  .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  h1{font-size:24px;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+  .role{color:var(--muted);font-size:14px;font-weight:600;margin-top:3px}
+  .hello{margin-top:18px;font-size:15px;line-height:1.5;color:#c9c9cf;font-weight:500}
+
+  /* buttons */
+  .links{display:grid;gap:8px;margin-top:22px}
+  .btn{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:16px;background:var(--card);
+       transition:background .15s ease, transform .12s ease}
+  .btn:active{transform:scale(.98)}
+  @media (hover:hover){.btn:hover{background:var(--card-hi)}}
+  .btn svg{flex:none;width:22px;height:22px}
+  .btn .t{flex:1;min-width:0}
+  .btn b{display:block;font-size:16px;font-weight:700;letter-spacing:-.01em}
+  .btn small{display:block;font-size:13px;color:var(--muted);font-weight:500;margin-top:1px}
+  .btn .ar{color:var(--muted);font-size:18px;font-weight:600}
+  .btn.wa{background:var(--wa);color:#04210f}
+  .btn.wa small{color:#0b4a24}
+  .btn.wa .ar{color:#04210f}
+  @media (hover:hover){.btn.wa:hover{background:#2fe072}}
+
+  .row{display:grid;grid-template-columns:1fr auto;gap:8px}
+  .ig{display:grid;place-items:center;width:58px;border-radius:16px;background:var(--card);transition:background .15s}
+  @media (hover:hover){.ig:hover{background:var(--card-hi)}}
+  .ig svg{width:22px;height:22px}
+
+  /* bottom */
+  .foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px}
+  .soc{display:flex;gap:8px}
+  .soc a,.soc button{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--card);border:0;color:var(--text);
+         cursor:pointer;transition:background .15s}
+  @media (hover:hover){.soc a:hover,.soc button:hover{background:var(--card-hi)}}
+  .soc svg{width:19px;height:19px}
+  .save{font:700 14px "Manrope",sans-serif;color:var(--bg);background:var(--text);border:0;border-radius:99px;padding:12px 18px;cursor:pointer;
+        transition:transform .12s ease}
+  .save:active{transform:scale(.96)}
+  .copy{margin-top:22px;text-align:center;color:#55555c;font-size:12px;font-weight:600}
+</style>
+</head>
+<body>
+<main>
+  <header class="me">
+    <!-- Para poner tu foto: guárdala como foto.jpg en esta carpeta -->
+    <div class="pic">AR<img src="foto.jpg" alt="Alejandro Romero" onerror="this.remove()"></div>
+    <div>
+      <h1>Alejandro Romero</h1>
+      <p class="role">Ingeniero de Software</p>
+    </div>
+  </header>
+  <p class="hello">¡Gracias por viajar conmigo! Además de conducir, tengo trabajo como desarrollador de software y tengo varios proyectos. Aquí te dejo todo.</p>
+
+  <nav class="links">
+    <a class="btn wa" href="https://wa.me/50378679866?text=Hola%20Alejandro%2C%20vi%20tu%20QR" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.770-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.690.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.570.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.440-5.02c0-5.2 4.24-9.44 9.45-9.44a9.4 9.4 0 0 1 9.44 9.45c0 5.2-4.24 9.43-9.45 9.43zm8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.06c0 2 .52 3.96 1.52 5.68L.58 23.3l5.7-1.5a11.3 11.3 0 0 0 5.76 1.47c6.26 0 11.36-5.1 11.36-11.36 0-3.04-1.18-5.89-3.32-8.04z"/></svg>
+      <span class="t"><b>WhatsApp</b><small>7867-9866</small></span><span class="ar">→</span>
+    </a>
+
+    <a class="btn" href="https://arshop.es/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="t"><b>ArShop</b><small>Tu tienda en línea, lista para vender</small></span><span class="ar">→</span>
+    </a>
+
+    <div class="row">
+      <a class="btn" href="https://argirlsv.store/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+        <span class="t"><b>AR Girl SV</b><small>Tienda de ropa</small></span><span class="ar">→</span>
+      </a>
+      <a class="ig" href="https://www.instagram.com/argirlsv/" target="_blank" rel="noopener" aria-label="Instagram de AR Girl SV">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+      </a>
+    </div>
+
+    <a class="btn" href="https://www.instagram.com/artripsv/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+      <span class="t"><b>AR Trip SV</b><small>Viajes y excursiones · @artripsv</small></span><span class="ar">→</span>
+    </a>
+
+    <a class="btn" href="https://alejosv07.github.io/portafolio/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+      <span class="t"><b>Portafolio</b><small>Páginas web, sistemas y apps</small></span><span class="ar">→</span>
+    </a>
+  </nav>
+
+  <div class="foot">
+    <div class="soc">
+      <a href="https://www.linkedin.com/in/alejandro-romero-dev/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.130zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+      <a href="tel:+50378679866" aria-label="Llamar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <button id="share" type="button" aria-label="Compartir">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg>
+      </button>
+    </div>
+    <button class="save" id="save" type="button">Guardar contacto</button>
+  </div>
+
+  <p class="copy">© 2026 Alejandro Romero · El Salvador</p>
+</main>
+
+<script>
+  document.getElementById('save').onclick = () => {
+    const vcf = ['BEGIN:VCARD','VERSION:3.0','N:Romero;Alejandro;;;','FN:Alejandro Romero','TITLE:Ingeniero de Software',
+      'TEL;TYPE=CELL:+50378679866','URL:https://alejosv07.github.io/portafolio/','URL:https://arshop.es/','URL:https://argirlsv.store/',
+      'URL:https://www.linkedin.com/in/alejandro-romero-dev/','URL:https://www.instagram.com/argirlsv/','URL:https://www.instagram.com/artripsv/','END:VCARD'].join('\r\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([vcf], {type:'text/vcard'}));
+    a.download = 'Alejandro-Romero.vcf'; a.click();
+  };
+  document.getElementById('share').onclick = async () => {
+    const url = location.href.split('#')[0];
+    try {
+      if (navigator.share) await navigator.share({title:'Alejandro Romero', url});
+      else await navigator.clipboard.writeText(url);
+    } catch (e) {}
+  };
+</script>
+</body>
+</html>
